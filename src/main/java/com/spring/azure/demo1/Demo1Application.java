@@ -13,6 +13,12 @@ public class Demo1Application {
 	public String message(){
 		return "Congrats!! Your application deployed to azure!!";
 	}
+
+	@GetMapping
+	public String welcome(){
+		return "Welcome to azure!!";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(Demo1Application.class, args);
 	}
